@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*ESTILOS GENERALES*/
+
+body{
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    font-family: 'Mukta', sans-serif;
+    background-color: #fff;
+}
+
+header{
+    grid-area: header;
+    background-color: #fff;
+    height: 60px;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+
+main{
+    
+    grid-area: main;
+}
+
+footer{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+   
+    border-top: solid 2px gainsboro;
+    color: #7e7e7e;
+    background-color: #111;
+    height: 150px;
+    text-align: center;
+}
+
+.indexF{
+    margin-top: 16px;
+}
+/* ESTILOS INDEX HTML */
+.hubTablet{
+    display: none;
+}
+.hubPc{
+    display: none;
+}
+
+
+
+/* ESTILOS MENU CELULAR */
+
+.logologo{
+    text-decoration: none;
+    color: #111;
+}
+
+.hubMovil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuMovil{
+    font-weight: 300;
+    color: #111;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.logoMovil a{
+    color: #111;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+/* ESTILOS Main Movil*/
+
+.mainIndex{
+    display: grid;
+    grid-template-areas: "imagenMain imagenMain"
+                         "informacionMainUno informacionMainDos";
+    justify-items: center;
+}
+
+.imagenMain{
+    grid-area: imagenMain;
+    height: 450px;
+    width: 95%;
+    margin: 10px 0;
+}
+
+.informacionMainUno{
+    width: 50%;
+    grid-area: informacionMainUno;
+    
+}
+
+.informacionMainUno p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.informacionMainUno h2{
+    font-size: 30px;
+    text-align: justify;
+}
+
+.informacionMainDos{
+    width: 50%;
+    grid-area:informacionMainDos;
+}
+
+.informacionMainDos p{
+    line-height: 24px;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+    
+}
+
+.informacionMainDos h2{
+    line-height: 30px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+
+
+
+.informacionMainDos a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #111;
+    padding: 3px;
+    border-radius: 50px;
+}
+
+
+
+ /*EMDIA DE TABLET*/
+
+@media screen and (min-width: 600px){
+    .hubMovil{
+        display: none;
+    }
+
+    /*MENU TABLET*/
+
+    .hubTablet{
+        display:flex ;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .menu{ 
+        list-style: none;
+    }
+    .itemMenu{
+        display: inline-block;
+    }
+    .menuTablet a{
+        text-decoration: none;
+        color:#111;
+   
+    }
+    .botonesRedes{
+        text-decoration: none;
+        color:black;
+        margin: 5px;
+        font-size: 21px
+    }
+
+    .itemMenu {
+        margin:0 10px;
+        font-size: 16px;
+    }
+
+    .redes{
+        margin: 0 10px;
+    }
+
+    .imagenMain{
+        margin: 0;
+        height: 600px;
+    }
+
+
+}
+
+/*MEDIA ESCRITORIO*/
+
+@media screen and (min-width: 1000px){
+    .hubMovil{
+        display: none;
+    }
+    .hubTablet{
+        display: none;
+    }
+    .logoPc a{
+        text-decoration: none;
+        color: #111;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0 36px;
+    }
+    .hubPc{
+        display: flex;
+        justify-content:space-between;
+        align-items: baseline;
+    }
+
+    .imagenMain{    
+        margin: 0;
+        height: 800px;
+    }
+
+    .informacionMainUno h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .informacionMainUno p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .informacionMainDos h2{
+        font-size: 50px;
+        text-align: center;
+        margin: 10px 0 0 0 ;
+        
+    }
+    .informacionMainDos p{
+       
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 23px;
+    }
+
+    .informacionMainDos{
+        margin-top: 16px;
+    }
+
+    .botonesRedes{
+        font-size: 24px;
+    }
+
+
+
+
+
+    .itemMenu a{
+        display: inline-block;
+        text-decoration: none;
+        color: #111;
+        font-size: 18px;
+        margin: 0 40px;
+        
+    }
+
+
+    .informacionMainDos a{
+        display: inline-block;
+    }
+
+}
+
+/*ESTILOS SNKRS.HTML movil*/
+
+    .catalogo{
+        display: none;
+    }
+    .catalogoMovil{
+        margin: 10px 0;
+        display: inline-block;
+        background-color: #fff;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "catalogoJordan"
+                             "catalogoNike"
+                             "catalogoAdidas";
+    }
+
+    .catalogoJordan{
+
+        text-align: center;
+        grid-area: catalogoJordan;
+    }
+
+    .catalogoJordan h2{
+        font-size: 30px;
+    }
+    .catalogoJordan img{
+        width: 95%;
+        height: 25%;
+    }
+    .catalogoNike{
+        text-align: center;
+        grid-area: catalogoNike;
+    }
+    .catalogoAdidas{
+
+        text-align: center;
+        grid-area: catalogoAdidas;
+    }
+
+    .imagenesJordan{
+        width: 95%;
+        height: 25%;
+        border: solid gainsboro 1px;
+    }
+    .imagenesAdidas{
+        width: 95%;
+        height: 40%;
+        border: solid gainsboro 1px;
+    }
+    .fondoCatalogo{
+    color: #fff;
+    background-color: #111;
+    }
+    .catalogoNike p{
+        margin-bottom: 10px;
+    }
+
+    .catalogoJordan p{
+        margin-bottom: 10px;
+    }
+    .catalogoAdidas p{
+        margin-bottom: 10px;
+    }
+
+    /*MEDIA TABLES SNKRS.HTML*/
+
+    @media screen and (min-width: 600px){
+        .catalogoMovil{
+            display: none;
+        }
+        .catalogo{
+            display: block;
+            
+        }
+        .textoCatalogo{
+            width: 20%;
+        }
+        .imagenesJordanPc{
+            width: 35%;
+            height: auto;
+            
+            
+        }
+        .catalogoJordanPc{
+            align-items: stretch;
+            display: flex;
+            justify-content: space-between;
+            border: solid gainsboro 1px;
+        } 
+
+        .catalogoAdidasPc{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            border: solid gainsboro 1px;
+           
+        } 
+        .catalogoNikePc{
+            border: solid gainsboro 1px;
+            margin: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+
+        } 
+        
+        .textoCatalogo{
+            text-align: center;
+            color: #fff;
+            background-color: #111;
+            display:flex ;
+            flex-flow: column;
+            justify-content: center;
+
+
+        }
+        .textoCatalogo h2{
+            font-size: 30px;
+        }
+        .textoCatalogo P{
+            font-size: 14px;
+        }
+
+    }
+
+
+    @media screen and (min-width: 1000px){
+        .textoCatalogo P{
+            font-size: 20px;
+        } 
+        .textoCatalogo h2{
+            font-size: 35px;
+        }
+    }
+
+
+/*ESTILOS NOVEDADES*/
+
+.mainNovedades{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "artMain"
+                         "subTitulo"
+                         "artExtra";
+}
+.subTitulo{
+    background-color: #111;
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+    grid-area: subTitulo;
+}
+.artMain{
+    height: 400px;
+    width: 100%;
+    grid-area: artMain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.artMain h2 img{
+    
+    width: 100%;
+    height: auto;
+}
+
+.artMain h2{
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.artMain h2 span{
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+
+
+.artMain div p{
+   
+    text-align: left;
+    font-size: 14px;
+    
+}
+
+.artMain div a{
+   
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #111;
+    padding: 3px;
+    border-radius: 50px;
+    display: inline-block;
+    
+}
+
+.infoMain{
+    margin: 0 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+
+/*Estilos noticia secundaria*/
+
+.artExtra{
+    margin-top: 10px;
+    width: 100%;
+    border: solid gainsboro 0.3px;
+    grid-area: artExtra;
+    display: grid;
+    grid-template-areas: "boxTitulos"
+                         "boxImg"
+                         "boxText";
+}
+
+.boxTitulos{
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    
+    text-align: center;
+    grid-area: boxTitulos;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxImg{
+    margin: 10px 0;
+    grid-area: boxImg;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.boxImg img{
+    height: 150px;
+    width: 25%;
+}
+
+.boxText{
+    grid-area: boxText;
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: 14px;
+}
+.boxText p{
+    margin: 15px;
+}
+
+/*MEDIA NOVEDADES*/
+
+@media screen and (min-width: 600px){
+    .boxImg{
+        height: 300px;
+    }
+    .boxImg img{
+        height: auto;
+        
+    }
+    .boxText{
+        font-size: 18px;
+    }
+    .artMain div p{
+        font-size: 20px;
+    }
+    .artMain{
+        height: 600px;
+    }
+    .artMain h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .boxImg{
+        height: 400px;
+    }
+    .artMain{
+        height: 800px;
+    }
+    .artMain h2 span{
+        font-size: 30px
+    }
+}
+
+
+/*ESTILOS NOSOTROS*/
+
+.textNosotros{
+    margin: 10px 0 ;
+    text-align: center;
+    width: 100%;
+}
+
+.imgNosotros{
+    text-align: center;
+    width: 100%;
+}
+
+.imgNosotros img{
+    height: auto;
+    width: 95%;
+}
+
+/*MEDIA NOSOTROS*/
+@media screen and (min-width: 1000px){
+    .textNosotros h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .textNosotros p{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+}
