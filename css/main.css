@@ -5,6 +5,9 @@
 }
 
 
+
+
+
 /*ESTILOS GENERALES*/
 
 body{
@@ -47,6 +50,24 @@ footer{
 .indexF{
     margin-top: 16px;
 }
+
+/* Animanicones (agregado con git */
+
+/* ESTILOS HOVER*/
+
+.informacionMainDos a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}
+
+.itemMenu a:hover{
+    transition: 0.5s;
+    transform: scale(1.3);
+    border-bottom: #111 solid 1px;
+} 
+
+
 /* ESTILOS INDEX HTML */
 .hubTablet{
     display: none;
@@ -54,6 +75,9 @@ footer{
 .hubPc{
     display: none;
 }
+
+
+
 
 
 
@@ -202,6 +226,25 @@ footer{
 /*MEDIA ESCRITORIO*/
 
 @media screen and (min-width: 1000px){
+
+    /* Animaciones agregadas con git 2 */
+    
+     .informacionMainDos a:hover{
+        transform: scale(1.2);
+        transition: 0.5s;
+
+    } 
+    
+     .itemMenu a:hover{
+        transition: 0.5s;
+        transform: scale(1.3);
+        border-bottom: #111 solid 1px;
+    } 
+
+     .botonesRedes i:hover{
+        transform: scale(1.4);
+        transition: 0.5s;
+    } 
     .hubMovil{
         display: none;
     }
